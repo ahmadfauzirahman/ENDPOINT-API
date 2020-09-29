@@ -1,0 +1,19 @@
+
+Create Migration
+
+vendor/bin/yii migrate/create --appconfig=config.php create_post_table --fields="title:string,body:text"
+
+
+sudo -u postgres psql
+
+CREATE DATABASE rsud_akuntansi_app;
+
+{
+    "name": "E-Kalakai",
+    "host": "sgx4.cloudhost.id",
+    "protocol": "sftp",
+    "port": 423,
+    "username": "kppnpkuc",
+    "remotePath": "/home/kppnpkuc/public_html/e-kalakai.com",
+    "uploadOnSave": true
+}
