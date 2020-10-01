@@ -26,9 +26,9 @@ return [
         // ...
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'pgsql:host=localhost;port=5432;dbname=simrs',
+            'dsn' => 'pgsql:host=localhost;port=5432;dbname=postgres',
             'username' => 'postgres',
-            'password' => 'postgres',
+            'password' => '12345',
             'charset' => 'utf8',
 
         ],
