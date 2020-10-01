@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models\Kepegawaian;
+namespace app\models;
 
 use Yii;
 

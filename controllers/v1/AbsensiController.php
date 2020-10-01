@@ -51,6 +51,21 @@ class AbsensiController extends ControllerBase
             return $this->writeResponse(true, 'Berhasil Melihat Log History Absen', $result);
         }
 
+        return $this->writeResponse(false, 'Tidak Berhasil Melihat Log History Absen', []);
+
+
         // return $this->writeResponse(false, 'Opps', []);
+    }
+
+    public function actionSimpanAbsen()
+    {
+        $p = Yii::$app->request;
+
+        if ($p->isPost) {
+            $post = $p->post();
+            var_dump($post);
+            exit();
+        }
+        return $this->writeResponse(false, 'Opps', []);
     }
 }
