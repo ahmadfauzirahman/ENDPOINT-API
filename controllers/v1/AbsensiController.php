@@ -31,7 +31,8 @@ class AbsensiController extends ControllerBase
         if ($p->isPost) {
             $post = $p->post();
 
-            $kodeAkun = $post['kode'];
+            //$kodeAkun = $post['kode'];
+            $kodeAkun = "1471116310890021";
             $data = MasterAbsensi::find()->where(['nip_nik' => $kodeAkun])->orderBy('id_tb_absensi DESC')->all();
 
             foreach ($data as $itemAbsen) {
